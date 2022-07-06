@@ -3,20 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <title>Preloader preview</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
-
     <div class="preloader">
         <div class="preloader_icon">
             <svg width="88" height="152" viewBox="0 0 88 152" fill="none">
                 <defs>
-                    <filter id="fillHeart" primitiveUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+                    <filter id="fillLightning" primitiveUnits="objectBoundingBox" x="0%" y="0%" width="100%"
+                        height="100%">
                         <feFlood x="0%" y="0%" width="100%" height="100%" flood-color="#FFBD19" />
                         <feOffset dy="1">
                             <animate attributeName="dy" values="0;1;0" dur="2.5s" repeatCount="indefinite" />
@@ -25,16 +24,15 @@
                         <feComposite operator="over" in2="SourceGraphic" />
                     </filter>
                 </defs>
-                <path id="ph" filter="url(#fillHeart)"
+                <path id="ph" filter="url(#fillLightning)"
                     d="M87.2794 0.745239H41.4033L6.26832 89.7039H27.1998L0.720703 151.239L82.0465 62.8708H53.4035L87.2794 0.745239Z"
                     fill="#1a1a1a" />
             </svg>
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
+
+    <script src="/index.js"></script>
 </body>
 
 </html>
